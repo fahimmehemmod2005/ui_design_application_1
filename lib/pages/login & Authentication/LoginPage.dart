@@ -19,6 +19,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 40),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your Email',
                 border: OutlineInputBorder(),
@@ -27,6 +28,7 @@ class LoginPage extends StatelessWidget {
             ),
             SizedBox(height: 20),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),

@@ -6,7 +6,7 @@ class Forget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-   appBar:    AppBar(
+   appBar: AppBar(
   backgroundColor: Color.fromARGB(255, 27, 25, 25),
   title: Text(
     "Forget Passowrd",
@@ -37,7 +37,7 @@ body: Padding(
               style: TextStyle(fontSize: 15, color: Colors.white),
             ),
             SizedBox(height: 30),
-            TextField(
+            TextField(  style: TextStyle(color: Colors.white),
               decoration: InputDecoration(prefixIcon: Icon(Icons.mail_outline,color: const Color.fromARGB(255, 213, 253, 33),),
                 hintText: 'Enter your email',
                 border: OutlineInputBorder(),

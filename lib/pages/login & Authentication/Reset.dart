@@ -24,7 +24,7 @@ class Reset extends StatelessWidget {
         child: ListView(
           children: [
             SizedBox(height: 150),
-            TextField(
+            TextField(  style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter a new password',
                 border: OutlineInputBorder(),
@@ -33,7 +33,7 @@ class Reset extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            TextField(
+            TextField(  style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Re-enter new Password',
                 border: OutlineInputBorder(),

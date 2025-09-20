@@ -1,6 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/screen_one.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/screen_two.dart';
+import 'package:ui_design_application_1/pages/Chat/chat.dart';
+import 'package:ui_design_application_1/pages/Side%20Bar/history.dart';
+import 'package:ui_design_application_1/pages/Side%20Bar/privacy.dart';
+import 'package:ui_design_application_1/pages/Side%20Bar/side_bar.dart';
 import 'package:ui_design_application_1/pages/Splash/NextPage.dart';
 import 'package:ui_design_application_1/pages/Splash/SplashPage.dart';
 import 'package:ui_design_application_1/pages/login%20&%20Authentication/Forget.dart';
@@ -34,6 +39,12 @@ class MyApp extends StatelessWidget {
         "SignUp": (context) => SignUp(),
         "Verify": (context) => Verify(),
         "screen_one": (context) => screen_one(),
+        "screen_two": (context) => screen_two(),
+        "chat": (context) => chat(),
+        "side_bar": (context) => side_bar(),
+        "privacy": (context) => privacy(),
+        "history": (context) => history(),
+
       },
     );
   }

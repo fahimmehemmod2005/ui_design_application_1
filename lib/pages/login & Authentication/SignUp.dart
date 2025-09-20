@@ -19,6 +19,7 @@ class SignUp extends StatelessWidget {
             ),
             SizedBox(height: 30),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your name',
                 border: OutlineInputBorder(),
@@ -28,6 +29,7 @@ class SignUp extends StatelessWidget {
             ),
             SizedBox(height: 10),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your email',
                 border: OutlineInputBorder(),
@@ -38,6 +40,7 @@ class SignUp extends StatelessWidget {
             ),
               SizedBox(height: 10),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
@@ -47,6 +50,7 @@ class SignUp extends StatelessWidget {
             ),
        SizedBox(height: 10),
             TextField(
+              style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
