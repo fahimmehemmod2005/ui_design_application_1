@@ -61,7 +61,7 @@ class chat extends StatelessWidget {
                 color: Colors.grey[900],
                 padding: EdgeInsets.all(8.0),
                 child: Row(children: [
-                  Image.asset("assets/icons/frame32.png",height: 40,)
+                  Image.asset("assets/icons/frame32.png",height: 35,)
                 ],),
               ),
             ],
