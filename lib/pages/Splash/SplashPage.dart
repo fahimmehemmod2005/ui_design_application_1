@@ -11,7 +11,7 @@ class SplashPage extends StatelessWidget {
         height: 200, width: 200,
         child: InkWell(
           onTap: (){
-            Navigator.pushNamed(context, "NextPage");
+             Navigator.pushNamed(context, "NextPage");
           },
           child: Image.asset(
               "assets/icons/img.png",
