@@ -38,7 +38,7 @@ body: Padding(
             ),
             SizedBox(height: 30),
             TextField(
-              decoration: InputDecoration(prefixIcon: Icon(Icons.mail,color: const Color.fromARGB(255, 213, 253, 33),),
+              decoration: InputDecoration(prefixIcon: Icon(Icons.mail_outline,color: const Color.fromARGB(255, 213, 253, 33),),
                 hintText: 'Enter your email',
                 border: OutlineInputBorder(),
               ),

@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/screen_one.dart';
 import 'package:ui_design_application_1/pages/Splash/NextPage.dart';
 import 'package:ui_design_application_1/pages/Splash/SplashPage.dart';
 import 'package:ui_design_application_1/pages/login%20&%20Authentication/Forget.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         "Reset": (context) => Reset(),
         "SignUp": (context) => SignUp(),
         "Verify": (context) => Verify(),
+        "screen_one": (context) => screen_one(),
       },
     );
   }

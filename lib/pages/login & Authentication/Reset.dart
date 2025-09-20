@@ -28,7 +28,7 @@ class Reset extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter a new password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock,color: Color.fromARGB(255, 151, 226, 64),),
+                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),),
                 
               ),
             ),
@@ -37,7 +37,7 @@ class Reset extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Re-enter new Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),)
               ),
               obscureText: true,
             ),

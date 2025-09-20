@@ -22,8 +22,7 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Email',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.email,color: Color.fromARGB(255, 151, 226, 64),),
-                
+                prefixIcon: Icon(Icons.mail_outline,color: Color.fromARGB(255, 151, 226, 64),)
               ),
             ),
             SizedBox(height: 20),
@@ -31,7 +30,8 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock,color: Color.fromARGB(255, 151, 226, 64),)
+                suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.visibility_off,color: Color.fromARGB(255, 151, 226, 64),)),
+                prefixIcon: Icon(Icons.lock_outline_rounded,color: Color.fromARGB(255, 151, 226, 64),)
               ),
               obscureText: true,
             ),
@@ -47,7 +47,7 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
-                
+                Navigator.pushNamed(context, "screen_one");
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor:  Color.fromARGB(255, 151, 226, 64),

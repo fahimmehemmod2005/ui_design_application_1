@@ -22,7 +22,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your name',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person,color: Color.fromARGB(255, 151, 226, 64),),
+                prefixIcon: Icon(Icons.person_outline,color: Color.fromARGB(255, 151, 226, 64),),
                 
               ),
             ),
@@ -31,7 +31,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your email',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.mail,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Icon(Icons.mail_outline,color: Color.fromARGB(255, 151, 226, 64),)
               ),
               obscureText: true,
               
@@ -41,7 +41,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock,color: Color.fromARGB(255, 151, 226, 64),),
+                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),),
                 
               ),
             ),
@@ -50,7 +50,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),)
               ),
               obscureText: true,
             ),
