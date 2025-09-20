@@ -1,23 +1,33 @@
-import 'package:flutter/material.dart';
 
-class SplashPage extends StatelessWidget {
+import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/pages/Splash/NextPage.dart';
+
+class SplashPage extends StatefulWidget {
   const SplashPage({super.key});
 
   @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+class _SplashPageState extends State<SplashPage> {
+@override
+void initState() {
+  super.initState();
+  Future.delayed(const Duration(seconds: 3),(){
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => NextPage()),
+    );
+   }
+ );
+}
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       body: Center(
-     child:  SizedBox(
-        height: 200, width: 200,
-        child: InkWell(
-          onTap: (){
-             Navigator.pushNamed(context, "NextPage");
-          },
-          child: Image.asset(
-              "assets/icons/img.png",
-          ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/icons/img.png",height: 140,),
+          ],
         ),
-      ),
       ),
     );
   }
