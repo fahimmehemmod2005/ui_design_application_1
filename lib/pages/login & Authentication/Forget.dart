@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
 
 class Forget extends StatelessWidget {
   const Forget({super.key});
@@ -38,11 +39,11 @@ body: Padding(
             ),
             SizedBox(height: 30),
             TextField(  style: TextStyle(color: Colors.white),
-              decoration: InputDecoration(prefixIcon: Icon(Icons.mail_outline,color: const Color.fromARGB(255, 213, 253, 33),),
+              decoration: InputDecoration(
+                prefixIcon: Image.asset("assets/icons/sms.png",color: Format_Color,),
                 hintText: 'Enter your email',
                 border: OutlineInputBorder(),
               ),
-              keyboardType: TextInputType.emailAddress,
               
             ),
             SizedBox(height: 30),
@@ -54,7 +55,7 @@ body: Padding(
                   Navigator.pushNamed(context, "OtpVerify");
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor:  Color.fromARGB(255, 171, 238, 48),
+                  backgroundColor:  Format_Color,
                   padding: EdgeInsets.symmetric(vertical: 16),
                 ),
                 child: Text(

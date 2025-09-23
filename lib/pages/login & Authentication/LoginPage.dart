@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -10,10 +11,10 @@ class LoginPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: ListView(
           children: [
-            SizedBox(height: 70),
+            SizedBox(height: 80),
             Center(
               child: Image.asset(
-                'assets/icons/imgcopy.png', 
+                'assets/icons/imgcopy.png',
                 height: 100,
               ),
             ),
@@ -23,7 +24,7 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Email',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.mail_outline,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Image.asset("assets/icons/sms.png",color: Format_Color,),
               ),
             ),
             SizedBox(height: 20),
@@ -33,7 +34,7 @@ class LoginPage extends StatelessWidget {
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
                 suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.visibility_off,color: Color.fromARGB(255, 151, 226, 64),)),
-                prefixIcon: Icon(Icons.lock_outline_rounded,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Image.asset("assets/icons/lock.png",color: Format_Color,),
               ),
               obscureText: true,
             ),
@@ -64,7 +65,42 @@ class LoginPage extends StatelessWidget {
             ),
             ),
             SizedBox(height: 10),
-             Image.asset("assets/images/social.png"),
+             Row(
+               mainAxisAlignment: MainAxisAlignment.spaceAround,
+               children: [
+                    Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                      ),
+                      height: 65,width: 90,
+                      child: Center(
+                          child:
+                          InkWell(onTap: (){},
+                              child: Image.asset("assets/icons/apple.png",height: 50,)))
+                    ),
+                 Container(
+                     decoration: BoxDecoration(
+                       border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                     ),
+                     height: 65,width: 90,
+                     child: Center(
+                         child:
+                         InkWell(onTap: (){},
+                             child: Image.asset("assets/icons/facebook.png",height: 50,)))
+                 ),
+                 Container(
+                     decoration: BoxDecoration(
+                       border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                     ),
+                     height: 65,width: 90,
+                     child: Center(
+                         child:
+                         InkWell(onTap: (){},
+                             child: Image.asset("assets/icons/google.png",height: 50,)))
+                 ),
+               ],
+             ),
+             // Image.asset("assets/images/social.png"),
             SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

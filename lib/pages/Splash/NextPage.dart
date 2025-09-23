@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
 class NextPage extends StatelessWidget {
   const NextPage({super.key});
 
@@ -42,7 +43,7 @@ class NextPage extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {Navigator.pushNamed(context, "LoginPage");},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 183, 245, 39),
+                    backgroundColor: Format_Color,
                     padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),

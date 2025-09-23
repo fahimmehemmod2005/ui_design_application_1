@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
 
 class Reset extends StatelessWidget {
   const Reset({super.key});
@@ -17,19 +18,18 @@ class Reset extends StatelessWidget {
          leading: BackButton(color: Colors.white,),
       shadowColor: Colors.white,elevation: 0.5,
 ),
-
-
+      
       body: Padding(
         padding:  EdgeInsets.symmetric(horizontal: 24.0),
         child: ListView(
           children: [
-            SizedBox(height: 150),
+            SizedBox(height: 200),
             TextField(  style: TextStyle(color: Colors.white),
               decoration: InputDecoration(
                 labelText: 'Enter a new password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),),
-                
+                prefixIcon: Image.asset("assets/icons/lock.png",color: Format_Color,),
+
               ),
             ),
             SizedBox(height: 20),
@@ -37,17 +37,17 @@ class Reset extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Re-enter new Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Image.asset("assets/icons/lock.png",color: Format_Color,),
               ),
               obscureText: true,
             ),
-            SizedBox(height: 10),
+            SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                
+
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor:  Color.fromARGB(255, 188, 252, 70),
+                backgroundColor:  Format_Color,
                 padding: EdgeInsets.symmetric(vertical: 16),
               ),
               child: Text("Confirm", style: TextStyle(fontSize: 18,color: Colors.black)),

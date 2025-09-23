@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -10,7 +11,7 @@ class SignUp extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: ListView(
           children: [
-            SizedBox(height: 50),
+            SizedBox(height: 100),
             Center(
               child: Image.asset(
                 'assets/icons/imgcopy.png',
@@ -23,7 +24,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your name',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person_outline,color: Color.fromARGB(255, 151, 226, 64),),
+                prefixIcon: Image.asset("assets/icons/user.png",color: Format_Color,),
                 
               ),
             ),
@@ -33,7 +34,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your email',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.mail_outline,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Image.asset("assets/icons/sms.png",color: Format_Color,),
               ),
               obscureText: true,
               
@@ -44,7 +45,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),),
+                prefixIcon: Image.asset("assets/icons/lock.png",color: Format_Color,),
                 
               ),
             ),
@@ -54,7 +55,7 @@ class SignUp extends StatelessWidget {
               decoration: InputDecoration(
                 labelText: 'Enter Your Password',
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock_outline,color: Color.fromARGB(255, 151, 226, 64),)
+                prefixIcon: Image.asset("assets/icons/lock.png",color: Format_Color,),
               ),
               obscureText: true,
             ),
@@ -64,7 +65,7 @@ class SignUp extends StatelessWidget {
                  Navigator.pushNamed(context, "Verify");
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor:  Color.fromARGB(255, 151, 226, 64),
+                backgroundColor: Format_Color,
                 padding: EdgeInsets.symmetric(vertical: 16),
               ),
               child: Text('Sign Up', style: TextStyle(fontSize: 18,color: Colors.black)),
@@ -81,7 +82,7 @@ class SignUp extends StatelessWidget {
                   child: Text(
                     'Login',
                     style: TextStyle(
-                      color: Colors.lightGreen,
+                      color: Format_Color,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
