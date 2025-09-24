@@ -68,35 +68,41 @@ class LoginPage extends StatelessWidget {
              Row(
                mainAxisAlignment: MainAxisAlignment.spaceAround,
                children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                    InkWell(
+                      onTap: (){},
+                      child: Container(
+                        decoration: BoxDecoration(
+                          border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                        ),
+                        height: 65,width: 90,
+                        child: Center(
+                            child:
+                           Image.asset("assets/icons/google.png",height: 50,))
                       ),
-                      height: 65,width: 90,
-                      child: Center(
-                          child:
-                          InkWell(onTap: (){},
-                              child: Image.asset("assets/icons/apple.png",height: 50,)))
                     ),
-                 Container(
-                     decoration: BoxDecoration(
-                       border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
-                     ),
-                     height: 65,width: 90,
-                     child: Center(
-                         child:
-                         InkWell(onTap: (){},
-                             child: Image.asset("assets/icons/facebook.png",height: 50,)))
+                 InkWell(
+                   onTap: (){},
+                   child: Container(
+                       decoration: BoxDecoration(
+                         border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                       ),
+                       height: 65,width: 90,
+                       child: Center(
+                           child:
+                           Image.asset("assets/icons/facebook.png",height: 50,))
+                   ),
                  ),
-                 Container(
-                     decoration: BoxDecoration(
-                       border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
-                     ),
-                     height: 65,width: 90,
-                     child: Center(
-                         child:
-                         InkWell(onTap: (){},
-                             child: Image.asset("assets/icons/google.png",height: 50,)))
+                 InkWell(
+                   onTap: (){},
+                   child: Container(
+                       decoration: BoxDecoration(
+                         border: Border.all(color: Format_Color),borderRadius: BorderRadius.circular(10),
+                       ),
+                       height: 65,width: 90,
+                       child: Center(
+                           child:
+                           Image.asset("assets/icons/apple.png",height: 50,))
+                   ),
                  ),
                ],
              ),

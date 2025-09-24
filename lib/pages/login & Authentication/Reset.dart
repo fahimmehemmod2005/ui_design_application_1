@@ -8,7 +8,7 @@ class Reset extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar:    AppBar(
-  backgroundColor: Color.fromARGB(255, 27, 25, 25),
+  backgroundColor: Mode_Color,
   title: Text(
     "Reset Password",
     style: TextStyle(color: Colors.white,

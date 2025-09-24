@@ -1,8 +1,17 @@
 
 import 'package:flutter/material.dart';
+import 'package:ui_design_application_1/color_format.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/About_Page.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/Menu_Page.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/Privacy_Page.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/Settings_Page.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/Terms_Page.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/screen_one.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/screen_two.dart';
 import 'package:ui_design_application_1/pages/Chat/chat.dart';
+import 'package:ui_design_application_1/pages/Profile/Profile_One.dart';
+import 'package:ui_design_application_1/pages/Profile/Profile_Page.dart';
+import 'package:ui_design_application_1/pages/Profile/Profile_Two.dart';
 import 'package:ui_design_application_1/pages/Side%20Bar/history.dart';
 import 'package:ui_design_application_1/pages/Side%20Bar/privacy.dart';
 import 'package:ui_design_application_1/pages/Side%20Bar/side_bar.dart';
@@ -27,7 +36,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor:  Color.fromARGB(255, 27, 25, 25),
+        scaffoldBackgroundColor:  Mode_Color,
       ),
       routes: {
         "/": (context) => SplashPage(),
@@ -44,7 +53,14 @@ class MyApp extends StatelessWidget {
         "side_bar": (context) => side_bar(),
         "privacy": (context) => privacy(),
         "history": (context) => history(),
-
+        "Profile_Page": (context) => Profile_Page(),
+        "Profile_One": (context) => Profile_One(),
+        "Profile_Two": (context) => Profile_Two(),
+        "Menu_Page": (context) => Menu_Page(),
+        "Settings_Page": (context) => Settings_Page(),
+        "Terms_Page": (context) => Terms_Page(),
+        "Privacy_Page": (context) => Privacy_Page(),
+        "About_Page": (context) => About_Page(),
       },
     );
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ui_design_application_1/color_format.dart';
 
 class screen_one extends StatelessWidget {
   const screen_one({super.key});
@@ -11,16 +10,26 @@ class screen_one extends StatelessWidget {
         children: [
           Row(
             children: [
-              SizedBox(width: 5),
-              Image.asset("assets/images/Profile.png"),
               SizedBox(width: 10),
-              Text("Hi Susan",
-                style: TextStyle(
-                  color: Colors.grey,fontSize: 22
-                ),
+              InkWell(onTap: (){
+                Navigator.pushNamed(context, "Profile_Page");
+              },
+              child: Row(
+                children: [
+                  Image.asset("assets/images/Profile.png"),
+                  SizedBox(width: 8),
+                  Text("Hi Susan",
+                    style: TextStyle(
+                      color: Colors.grey,fontSize: 22
+                    ),
+                  ),
+                ],
               ),
+            ),
               Spacer(),
-              IconButton(onPressed: (){}, icon: Icon(Icons.menu))
+              IconButton(onPressed: (){
+                Navigator.pushNamed(context, "Menu_Page");
+              }, icon: Icon(Icons.menu))
             ],
           ),
           SizedBox(height: 10),
