@@ -28,7 +28,9 @@ class Menu_Page extends StatelessWidget {
             SizedBox(height: 20,),
             Row(
               children: [InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, "History_Page");
+                },
                 child: Row(
                   children: [
                     SizedBox(width: 10,),

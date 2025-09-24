@@ -55,7 +55,9 @@ class Profile_Page extends StatelessWidget {
               ),
               SizedBox(height: 30,),
               InkWell(
-                onTap: (){},
+                onTap: (){
+                  Navigator.pushNamed(context, "Payment_Page");
+                },
                 child: Row(
                   children: [
                     SizedBox(width: 5,),

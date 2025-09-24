@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_design_application_1/color_format.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/Menu/About_Page.dart';
+import 'package:ui_design_application_1/pages/App%20Screen/Menu/History_Page.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/Menu/Menu_Page.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/Menu/Privacy_Page.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/Menu/Settings_Page.dart';
@@ -9,6 +10,7 @@ import 'package:ui_design_application_1/pages/App%20Screen/Menu/Terms_Page.dart'
 import 'package:ui_design_application_1/pages/App%20Screen/screen_one.dart';
 import 'package:ui_design_application_1/pages/App%20Screen/screen_two.dart';
 import 'package:ui_design_application_1/pages/Chat/chat.dart';
+import 'package:ui_design_application_1/pages/Profile/Payment_Page.dart';
 import 'package:ui_design_application_1/pages/Profile/Profile_One.dart';
 import 'package:ui_design_application_1/pages/Profile/Profile_Page.dart';
 import 'package:ui_design_application_1/pages/Profile/Profile_Two.dart';
@@ -61,6 +63,8 @@ class MyApp extends StatelessWidget {
         "Terms_Page": (context) => Terms_Page(),
         "Privacy_Page": (context) => Privacy_Page(),
         "About_Page": (context) => About_Page(),
+        "Payment_Page": (context) => Payment_Page(),
+        "History_Page": (context) => History_Page(),
       },
     );
   }
