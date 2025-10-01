@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                 Navigator.pushNamed(context, "screen_one");
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor:  Color.fromARGB(255, 151, 226, 64),
+                backgroundColor: Format_Color,
                 padding: EdgeInsets.symmetric(vertical: 16),
               ),
               child: Text('Login', style: TextStyle(fontSize: 18,color: Colors.black)),

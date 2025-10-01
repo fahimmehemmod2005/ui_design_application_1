@@ -318,6 +318,73 @@ class screen_one extends StatelessWidget {
               ],
             ),
           ),
+          InkWell(
+            onTap: (){
+              Navigator.pushNamed(context, "Screen_Two");
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Background_Color,
+                      ),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  children: [
+                                    Card(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                            image: DecorationImage(image:
+                                            AssetImage("assets/icons/angry.png"))
+                                        ),
+                                        height: 48,width: 48,
+                                      ),
+                                      color: Colors.grey.withOpacity(0.2),
+                                    ),
+                                    SizedBox(width: 10,),
+                                    Text("Personal Assistant",style: TextStyle(
+                                        fontSize: 16,fontWeight: FontWeight.bold,color: Colors.lightGreenAccent
+                                    ),),
+                                  ],
+                                ),
+                              ),
+            
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Row(
+                                children: [
+                                  SizedBox(width: 15,),
+                                  Expanded(
+                                    child: Text("Organized, helpful, and always on task. Your smart companion for staying productive and on schedul",
+                                      style: TextStyle(
+                                        fontSize: 15,color: Colors.white
+                                    ),),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      height: 140,width: 100,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.all(12.0),
             child: Row(
@@ -335,49 +402,106 @@ class screen_one extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(8.0),
-                              child: Card(
-                                child: Container(
-                                  decoration: BoxDecoration(
-                                      image: DecorationImage(image:
-                                      AssetImage("assets/icons/angry.png"))
+                              child: Column(
+                               crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    children: [
+                                      SizedBox(width: 5,),
+                                      Column(
+                                        children: [
+                                          Text("Unlock AI+ Features!",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20,color: Colors.white
+                                          ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
                                   ),
-                                  height: 48,width: 48,
-                                ),
-                                color: Colors.grey.withOpacity(0.2),
-                              ),
-                            ),
 
-                          ],
-                        ),
-                        Column(
-                          children: [
-                            Row(
-                              children: [
-                                SizedBox(width: 15,),
-                                Text("Personal Assistant",style: TextStyle(
-                                    fontSize: 16,fontWeight: FontWeight.bold,color: Colors.lightGreenAccent
-                                ),),
-                              ],
-                            ),
-                            SizedBox(height: 10,),
-                            Row(
-                              children: [
-                                SizedBox(width: 15,),
-                                Expanded(
-                                  child: Text("Organized, helpful, and always on task. Your smart companion for staying productive and on schedul",style: TextStyle(
-                                      fontSize: 14,color: Colors.white
-                                  ),),
-                                ),
-                              ],
+                                  SizedBox(height: 20,),
+                                  Row(
+                                    children: [
+                                      SizedBox(width: 5,),
+                                      Icon(Icons.check_box_outlined,color: Format_Color,),
+                                      SizedBox(width: 5,),
+                                      Column(
+                                        children: [
+                                          Text("Unlimited AI Conversations",
+                                            style: TextStyle(
+                                                fontSize: 20,color: Colors.white
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 15,),
+                                  Row(
+                                    children: [
+                                      SizedBox(width: 5,),
+                                      Icon(Icons.check_box_outlined,color: Format_Color,),
+                                      SizedBox(width: 5,),
+                                      Column(
+                                        children: [
+                                          Text("Exclusive AI Persons",
+                                            style: TextStyle(
+
+                                                fontSize: 20,color: Colors.white
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+
+                                  SizedBox(height: 15,),
+                                  Row(
+                                    children: [
+                                      SizedBox(width: 5,),
+                                      Icon(Icons.check_box_outlined,color: Format_Color,),
+                                      SizedBox(width: 5,),
+                                      Column(
+                                        children: [
+                                          Text("Early Access to New Peatures",
+                                            style: TextStyle(
+                                                fontSize: 20,color: Colors.white
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                  SizedBox(height: 20,),
+                                  SizedBox(
+                                    width: 350,
+                                    child: ElevatedButton(
+                                      onPressed: () {},
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor:  Format_Color,
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                      ),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        children: [
+                                          Text('Go Premium', style: TextStyle(fontSize: 22,color: Colors.black)),
+                                        Icon(Icons.arrow_forward,size: 30,color: Colors.black,)
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              )
                             ),
                           ],
                         ),
                       ],
                     ),
-                    height: 180,width: 100,
+                    height: 270,width: 100,
                   ),
                 ),
-                SizedBox(width: 10,),
               ],
             ),
           ),

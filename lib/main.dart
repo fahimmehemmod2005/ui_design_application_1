@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
         "SignUp": (context) => SignUp(),
         "Verify": (context) => Verify(),
         "screen_one": (context) => screen_one(),
-        "screen_two": (context) => screen_two(),
+        "Screen_Two": (context) => Screen_Two(),
         "chat": (context) => chat(),
         "side_bar": (context) => side_bar(),
         "privacy": (context) => privacy(),
